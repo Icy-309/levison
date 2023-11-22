@@ -121,15 +121,15 @@ span{
     grid-template-columns: repeat(auto-fit, minmax(380px, auto));
     gap: 20px;
     margin-bottom: 35px;
-  }
-  .product-info {
+}
+.product-info {
     text-align: center;
     padding: 20px 8%;
-  }
-  .products a{
+}
+.products a{
     color: var(--white-1);
-  }
-  .product {
+}
+.product {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -138,38 +138,34 @@ span{
     overflow: hidden;
     transition: .2s ease-in-out;
     cursor: pointer;
-  }
-  .product:hover{
+}
+.product:hover{
     transform: scale(1.05);
-  }
-  .product .text{
-    width: 100%;
-    background: rgb(124, 124, 124); 
-    padding:10px ;
-    text-align: center;
-  }
-  .product .text {
+}
+.product .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size:.9rem ;
     color: white;
     font-weight: 400;
     height: 25%;
-  }
-  .product .product-img{
+    width: 100%;
+    background: rgb(88, 88, 88); 
+
+}
+.product .product-img{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 75%;
-  }
-  .product .product-img img{
+}
+.product .product-img img{
     width: 115px;
     height: auto;
-  }
-  .product img {
-    width: 100%;
-    height: 100%;
-  }
+}
   
 footer {
     background-color: var(--main-theme-4);
@@ -296,7 +292,7 @@ footer p{
         text-align: left;
     }
 }
-@media screen and (max-width:1024px) {
+  @media screen and (max-width:1024px) {
     .product-info {
       text-align: center;
       padding: 20px 6%;
