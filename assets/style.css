@@ -326,7 +326,7 @@ footer p{
       padding: 0 6%;
     }
     .header h2{
-        font-size: 1.9rem;
+        font-size: 1.85rem;
     }
     .header p{
         font-size: .8rem;
@@ -350,7 +350,11 @@ footer p{
     .product .product-img img{
         width: 90px;
         height: auto;
-      }
+    }
+    .header h2{
+        font-size: 1.55rem;
+    }
+
   }
   @media screen and (max-width:350px) {
     .product .product-img img{
