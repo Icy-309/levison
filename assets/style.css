@@ -136,6 +136,11 @@ span{
     justify-content: center;
     height: 300px;
     overflow: hidden;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+  .product:hover{
+    transform: scale(1.05);
   }
   .product .text{
     width: 100%;
