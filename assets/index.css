@@ -1,164 +1,217 @@
-*{
 
+.home-section {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
 }
-main{
-
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/hero/farm1.jpg');
+  background-size: cover;
+  background-position: center;
 }
-.outer-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
-.inner-container-1{
-      font-family: 'Ubuntu', sans-serif;
-      width: 40%;
-}
-.inner-container-1-h1{
-    font-family: 'Ubuntu', sans-serif;
-    padding: 10px;
-}
-.inner-container-1-text{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  padding: 10px;
-  
-}
-.contact-us-btn{
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 200;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:flex ;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-left: 10px;
-
 }
-.inner-container-text{
-
-}
-.inner-container-2{
-
-}
-.inner-container-2-img{
-
-}
-
-/* who-are-we section  */
-.who-are-we-contaner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.inner-who-are-we-container-1{
-    padding: 30px;
-}
-.who-are-we-container-h2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
-    padding-bottom: 20px;
-    
-}
-.who-are-we-container-paragraph{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 100;
-    font-size: 17px;
-    width: 40%;
-    word-wrap: break-word;
-    word-break: break-all;
- 
-}
-
-.aboutus-btn{
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 15px;
- 
-}
-  .aboutus-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .aboutus-btn:focus {
-    background-color: #0069d9;
-  }
-.inner-who-are-we-container-2{
-
-}
-.who-are-we-contaner-img{
-    
-}
-
-/* Begiinng of the our product section */
-.our-products{
-  
-}
-.product-grid-container{
-  display: grid;
-  grid-template-columns:auto auto;
-  grid-template-rows: auto;
-  gap: 80px;
-}
-.our-products-h1{
-  font-family: 'Ubuntu', sans-serif;
+.text-content {
   text-align: center;
+  color: var(--white-1);
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.text-content .contact-text{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.btn{
+  padding: 13px 20px;
+  background: var(--main-theme-4);
+  border: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.btn a{
+  color: var(--white-1);
+}
+.btn:hover{
+  background-color: var(--main-theme-4a);
+}
+.contact-btn{
+  font-size: .9rem;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 50px;
+}
+.about-img img {
+  width: 300px;
+  height: auto; 
+  border-radius: 10px;
+}
+.about-text p{
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 2.0;
+}
+.about-text a{
+  color: var(--white-1);
+}
+.about-text .text-max{
+  width: 80%;
+}
+@media screen and (max-width:1024px) {
+  .product-info {
+    text-align: center;
+    padding: 20px 6%;
+  }
+}
+@media screen and (max-width:930px) {
+  .products{
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 10px;
+  }
+  .text-content {
+    padding: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.7rem;
+    margin-bottom: 18px;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .text-content .contact-text{
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width:890px) {
+  .product-info {
+    padding: 20px 0%;
+  }
+  .hero-text h1{
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+  }
+  .hero-text p{
+    font-size: 1.05rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-img{
+    width: 100%;
+    text-align: left;
+  }
+  .about-text .text-max{
+    width: 100%;
+  }
+}
+@media screen and (max-width:630px) {
+  .text-content {
+    padding: 15px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+  }
+  
+  .text-content p {
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+  .text-content .contact-text{
+    font-size: 1.05rem;
+  }
+  .products{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 6%;
+  }
   
 }
-.inner-products-containers{
-    grid-column: auto;
-    grid-row: auto;
-    width: 350px;
-    height: 170px;
-    border: solid 2px black;
-    border-radius: 10px;
-    margin-top: 35px;
-    justify-content: center
-   
-}
-.inner-products-containers .product-image {
-    width: 350px;
-    height: 110px;
-    border-radius: 10px 10px 0px 0px;
-    background-color: #ccc;
+@media screen and (max-width:480px) {
+  .text-content {
+    padding: 15px;
   }
-  .inner-products-containers .text {
-    width:350px;
-    height: 60px; ;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #eee;
+  
+  .text-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
   }
-  .paragraph{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 100;
-    font-size: 16px;
+  
+  .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .products{
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    padding: 0 3%;
+  }
+  .product .text{
+    padding:8px ;
+    font-size: .7rem;
+  }
+  .product {
+    height: 270px;
+  }
+  .hero-text h1{
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+  }
+  .hero-text p{
+    font-size: .9rem;
+  }
+  .about-text p{
+    font-size: .8rem;
+  }
+  .about-img{
+    text-align: center;
+  }
+  .product img {
     width: 100%;
-    word-wrap: break-word;
-   
   }
-  .product-btn{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    justify-content: center;
-    margin-top: 40px;
-   
+}
+@media screen and (max-width:350px) {
+  .about-img img {
+    width: 100%;
   }
+}
+
+
+
+
