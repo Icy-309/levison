@@ -1,3 +1,6 @@
+  .export-main .header{
+    text-align: center;
+  }
   .exports-cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -44,7 +47,50 @@
     font-weight: 600;
   }
 
-
+  @media screen and (max-width: 770px) {
+    .exports-cards{
+      grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    }
+    .card{
+      height: 280px;
+    }
+    .card .title img{
+      width: 30px;
+    }
+    .card .card-info .info{
+      gap: 8px;
+    }
+    .card .card-info .info p{
+      font-size: .9rem;
+    }
+    .card .card-info .info img{
+      width: 14px;
+    }
+    .card h2{
+      font-size: 1.3rem;
+    }
+    .card h4{
+      margin-bottom: 8px;
+      font-size: .85rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .exports-cards{
+      grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    }
+    .card{
+      height: 250px;
+    }
+    .card h2{
+      font-size: 1.2rem;
+    }
+    .card h4{
+      font-size: .75rem;
+    }
+    .card .card-info .info p{
+      font-size: .75rem;
+    }
+  }
   /* .product {
     margin-bottom: 40px;
     padding: 20px;

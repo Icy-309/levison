@@ -97,7 +97,7 @@ span{
 }
 .header p{
     font-size: .9rem;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 400;
 }
 .heading{
@@ -282,7 +282,6 @@ footer p{
         transition: ease 0.2s;
         transition-duration: 0.6s;
         z-index: 10;
-
     }
     ul a{
         width:100%;
@@ -329,6 +328,16 @@ footer p{
     }
     .header p{
         font-size: .8rem;
+    }
+    
+    .heading{
+        padding: 90px 3% 30px ;
+    }
+    .heading h2{
+        font-size: 1.9rem;
+    }
+    .heading h4{
+        font-size: 1.1rem;
     }
   }
   @media screen and (max-width:480px) {
