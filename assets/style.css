@@ -264,6 +264,7 @@ footer p{
         transition-delay: 0s;
         transition: ease 0.2s;
         transition-duration: 0.6s;
+        z-index: 10;
     }
 
     .ul-active{
@@ -280,6 +281,8 @@ footer p{
         transition-delay: 0s;
         transition: ease 0.2s;
         transition-duration: 0.6s;
+        z-index: 10;
+
     }
     ul a{
         width:100%;
