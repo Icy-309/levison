@@ -10,6 +10,24 @@ main{
     gap: 40px;
     padding: 15px 0 20px;
 }
+.about-heading{
+    position: relative;
+    background-color: none;
+    background-image: url('../img/about/about1.jpg');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .about-heading .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-1);
+    padding: 10vh 3%  ;
+  }
 .about-us p{
     font-size: 1.1rem;
     font-weight: 400;
