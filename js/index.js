@@ -24,17 +24,11 @@ window.onload = function () {
 // Scroll Reveal Effect (ScrollReveal Plugin is in the html)
 const scrl1 = ScrollReveal({
   origin:"top",
-  distance:"80px",
+  distance:"90px",
   duration:"2000",
   reset:true
 })
 const scrl2 = ScrollReveal({
-  origin:"top",
-  distance:"80px",
-  duration:"2500",
-  reset:true
-})
-const scrl3 = ScrollReveal({
   origin:"top",
   distance:"10px",
   duration:"2000",
@@ -45,10 +39,10 @@ scrl1.reveal(".about-text",{delay:200});
 scrl1.reveal(".about-img",{delay:200});
 scrl1.reveal(".header",{delay:200});
 scrl1.reveal(".product",{delay:200});
-scrl3.reveal(".about-img",{delay:400});
+scrl2.reveal(".about-img",{delay:400});
 scrl1.reveal(".about-us-text",{delay:200});
 scrl1.reveal(".product-btn",{delay:200});
-scrl3.reveal(".products-contact",{delay:200});
+scrl2.reveal(".products-contact",{delay:200});
 scrl1.reveal(".export-product",{delay:200});
 scrl1.reveal(".card",{delay:200});
-scrl3.reveal(".product-btn",{delay:200});
+scrl2.reveal(".product-btn",{delay:200});
