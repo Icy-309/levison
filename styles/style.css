@@ -23,6 +23,14 @@ body{
     overflow-x: hidden;
     background-color: var(--white-1);
 }
+main{
+    padding: 4% 3% 3% ;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+span{
+    color: var(--main-theme-3);
+}
 .nav{
     position: fixed;
     top: 0;
@@ -81,19 +89,13 @@ body{
 .toogle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-main{
-    padding: 4% 3% 3% ;
-    margin: 0 auto;
-    max-width: 1300px;
-}
-span{
-    color: var(--main-theme-3);
-}
+
 .header {
     margin-bottom: 15px;
 }
 .header h2{
     font-size: 2.1rem;
+    color: var(--main-theme-4a);
 }
 .header p{
     font-size: .9rem;
@@ -183,6 +185,9 @@ span{
     cursor: auto;
     border: 1px solid grey;
     font-size: 1rem;
+  }
+  .products-contact button a:hover{
+    list-style: underline;
   }
 
 footer {
