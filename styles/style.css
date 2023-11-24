@@ -241,6 +241,9 @@ footer i{
     font-size: 1.3rem;
 
 }
+footer a{
+    color:var(--white-1);
+}
 .copyright .footer-copyright-link {
     text-decoration: none;
     color: white;
