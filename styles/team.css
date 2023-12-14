@@ -4,15 +4,15 @@ main{
     max-width: 1300px;
   }
   
-  .products-heading{
+  .team-heading{
     position: relative;
     background-color: none;
-    background-image: url('../img/hero/hero2.jpg');
+    background-image: url('../img/team/heading.jpg');
     background-size: cover;
     background-position: center;
   
   }
-  .products-heading .overlay {
+  .team-heading .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +22,18 @@ main{
     color: var(--white-1);
     padding: 10vh 3%  ;
   }
-  .products-main .header{
+  .team-main .header{
     text-align: center;
+  }
+  .team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+  .team-card{
+    height: 400px;
+  }
+  .team-card .name{
+    font-weight: 600;
+    font-size: 1.2rem;
   }
   
