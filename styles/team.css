@@ -1,9 +1,11 @@
-main{
-    padding: 2% 3% 3% ;
+  main{
+    padding: 2% 10% 3% ;
     margin: 0 auto;
     max-width: 1300px;
   }
-  
+  .team-main .header{
+    padding-bottom: 10px;
+  }
   .team-heading{
     position: relative;
     background-color: none;
@@ -27,13 +29,74 @@ main{
   }
   .team{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 40px;
   }
   .team-card{
     height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .team-card .img img{
+    height: 100%;
+    width: 100%;
+  }
+  .team-card .img{
+    height: 70%;
+  }
+  .team-card .text{
+    height: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .team-card .name{
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-  
+  @media screen and (max-width:1062px ) {
+    main{
+      padding: 2% 7% 3%;
+    }
+  }
+  @media screen and (max-width:858px ) {
+    main{
+      padding: 2% 15% 3%;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .team{
+      gap: 25px;
+    }
+    .team-card .name{
+      font-size: 1.1rem;
+    } 
+  }
+  @media screen and (max-width:540px ) {
+    main{
+      padding: 2% 7% 3%;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .team-card{
+      height: 300px;
+    }
+    .team-card .name{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:400px ) {
+    main{
+      padding: 2% 3% 3%;
+    }
+    .team{
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+  }
+  @media screen and (max-width:350px ) {
+    .team{
+      grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    }
+  }
