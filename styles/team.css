@@ -81,7 +81,7 @@
   }
   @media screen and (max-width: 450px){
     .team-card{
-      height: 300px;
+      height: 350px;
     }
     .team-card .name{
       font-size: 1rem;
