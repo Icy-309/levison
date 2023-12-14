@@ -1,0 +1,28 @@
+main{
+    padding: 2% 3% 3% ;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  
+  .products-heading{
+    position: relative;
+    background-color: none;
+    background-image: url('../img/hero/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .products-heading .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-1);
+    padding: 10vh 3%  ;
+  }
+  .products-main .header{
+    text-align: center;
+  }
+  

@@ -167,8 +167,8 @@
 @media screen and (max-width:480px) {
   .text-content {
     padding: 15px;
+    text-align: left;
   }
-  
   .text-content h1 {
     font-size: 2.4rem;
     margin-bottom: 15px;
