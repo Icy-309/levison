@@ -56,6 +56,9 @@
     font-weight: 600;
     font-size: 1.3rem;
   }
+  .team-card .title{
+    color: var(--main-theme-4a);
+  }
   @media screen and (max-width:1062px ) {
     main{
       padding: 2% 7% 3%;
