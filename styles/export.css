@@ -1,0 +1,194 @@
+  .exports-heading{
+    position: relative;
+    background-color: none;
+    background-image: url('../img/about/about2.jpg');
+    background-size: cover;
+    background-position: center;
+
+  }
+  .exports-heading .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-1);
+    padding: 10vh 3%  ;
+  }
+  .export-main .header{
+    text-align: center;
+  }
+
+  /************ Exports Products Cards **********/
+
+  .export-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 20px;
+  }
+  .export-product{
+    height: 300px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    background: var(--white-1);
+    /* padding: 20px 15px 20px; */
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(53, 53, 53, 0.2);
+  }
+  .export-product .product-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+  }
+  .export-product .product-img img{
+    width: 115px;
+    height: auto;
+  }
+  .export-product .text{
+    padding: 10px ;
+    height: 60%;
+    width: 100%;
+    background: rgba(53, 53, 53, 0.705);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .export-product .text .content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 7px;
+  }
+  .export-product .text .content p{
+    font-size: .85rem;
+    color: var(--white-1);
+  }
+  .export-product .text .content img{
+    width: 20px;
+    height: auto;    
+  }
+
+  /************* Policies Cards ************/
+
+  .policies{
+    padding: 5% 0 1% ;
+  }
+  .exports-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 20px;
+  }
+  .card{
+    height: 300px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: var(--white-1);
+    padding: 20px 15px 20px;
+    transition: .2s ease-in-out;
+  }
+  .card:hover{
+    transform: translateY(-5px);
+  }
+  .card .title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+  .card .title img{
+    width: 40px;
+    height: auto;
+  }
+  .card .card-info .info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .card .card-info .info p{
+    font-size: .95rem;
+  }
+  .card .card-info .info img{
+    width: 20px;
+    height: auto;    
+  }
+  .card h2{
+    font-size: 1.5rem;
+  }
+  .card h4{
+    margin-bottom: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 770px) {
+    .exports-cards, .export-products{
+      grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    }
+    .card, .export-product{
+      height: 280px;
+    }
+    .card .title img{
+      width: 30px;
+    }
+    .card .card-info .info{
+      gap: 8px;
+      margin-bottom: 15px;
+
+    }
+    .card .card-info .info p{
+      font-size: .9rem;
+    }
+    .card .card-info .info img{
+      width: 14px;
+    }
+    .card h2{
+      font-size: 1.3rem;
+    }
+    .card h4{
+      margin-bottom: 8px;
+      font-size: .85rem;
+    }
+  }
+  @media screen and (max-width:720px) {
+    .export-product .product-img img{
+        width: 100px;
+        height: auto;
+      } 
+  }
+  @media screen and (max-width: 480px) {
+    .exports-cards, .export-products{
+      grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    }
+    .card,.export-product{
+      height: 250px;
+    }
+    .card h2{
+      font-size: 1.2rem;
+    }
+    .card h4{
+      font-size: .75rem;
+    }
+    .card .card-info .info p{
+      font-size: .75rem;
+    }
+    .export-product .product-img img{
+      width: 90px;
+      height: auto;
+  }
+  }
+  
+  @media screen and (max-width:350px) {
+    .export-product .product-img img{
+        width: 60px;
+        height: auto;
+    }
+  }
